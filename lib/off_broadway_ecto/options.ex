@@ -9,6 +9,13 @@ defmodule OffBroadwayEcto.Options do
         """,
         default: 5000
       ],
+      force_interval: [
+        type: :non_neg_integer,
+        doc: """
+        Flag to force the interval when scheduling the next
+        """,
+        default: false
+      ],
       client: [
         required: true,
         doc: """
